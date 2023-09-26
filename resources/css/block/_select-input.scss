@@ -1,0 +1,81 @@
+.select-options {
+    display: flex;
+    flex-flow: column;
+}
+
+    .select-option {
+        position: relative;
+        display: flex;
+        align-items: center;
+        
+        min-height: 9rem;
+        margin-bottom: 1.5rem;
+        padding: 2rem;
+        background: $c-lightest;
+        border: 0.2rem solid #F7F6F4;
+        border-radius: 0.8rem;
+        box-shadow: 0 0 0.8rem rgba(204, 197, 184, 0.25);
+        transition: background 0.2s ease;
+    
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            user-select: none;
+            display: none;
+        }
+
+        &.active {
+            border: solid 0.2rem $c-green;
+
+            .select-option__select {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                width: 2.5rem;
+                height: 2.5rem;
+                background-color: $c-light-green;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: 45%;
+                    width: 0.7rem;
+                    height: 1.3rem;
+                    border: solid $c-green;
+                    border-width: 0 0.25rem 0.25rem 0;
+                    transform:translate(-50%, -50%) rotate(45deg);
+              }
+            }
+        }
+
+        &.disabled {
+            opacity: 0.5;
+        }
+    }
+
+    .select-option__pre {
+        display: flex;
+    }
+
+    .select-option--multiple {
+        padding-right: 5rem;
+    }
+
+        .select-option__label {
+            color: $c-text;
+        }
+
+        .select-option__image {
+            width: 15%;
+            margin-right: 2rem;
+            text-align: center;
+
+            img {
+                width: 100%;
+                max-width: 5rem;
+            }
+        }

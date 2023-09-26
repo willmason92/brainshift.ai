@@ -1,0 +1,87 @@
+.chart {
+    height: 28.5rem;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin-bottom: 0;
+
+    canvas {
+        width: 100%!important;
+        max-height: 20rem;
+    }
+}
+
+    .chart__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+        .chart__title {
+            font-family: $f-montserrat;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 0;
+            color: $c-text-dark;
+        }
+
+        .chart__controls {
+            display: flex;
+            align-items: center;
+            font-family: $f-montserrat;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: $c-secondary-grey;
+        }
+
+            .chart-control {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                background: none;
+                padding: 0;
+                border: none;
+            }
+
+        .chart__range {
+            position: relative;
+            margin-right: 1rem;
+            color: $c-secondary-grey;
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: -0.9rem;
+                top: 0.7rem;
+                border-width: 0.5rem 0.45rem 0 0.45rem;
+                border-color: $c-secondary-grey transparent transparent transparent;
+                border-style: solid;
+            }
+        }
+
+            .range-select, .range-option {
+                font-family: $f-montserrat;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+
+            .range-select {
+                background: none;
+                border: none;
+                appearance: none;
+            }
+
+            .range-option {
+                min-width: 0;
+                font-family: $f-montserrat;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+
+    .chart__body {
+        position: relative;
+        flex-grow: 1;
+        padding: 0 1rem;
+        width: 100%;
+    }

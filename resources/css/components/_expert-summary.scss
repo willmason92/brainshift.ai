@@ -1,0 +1,96 @@
+/*------------------------------------*\
+    Expert Summary
+\*------------------------------------*/
+
+.expert-summary {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: $c-lightest;
+    box-shadow: 0 0 0.8rem rgba(204, 197, 184, 0.25);
+    border-radius: 0.8rem;
+}
+
+.expert-summary-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+    .expert-summary__image {
+        width: 7rem;
+        min-width: 7rem;
+        flex-shrink: 0;
+        margin-right: 1rem;
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: auto;
+            max-height: 5rem;
+            object-fit: contain;
+        }
+    }
+
+    .expert-location-icon {
+        display: flex;
+        justify-content: center;
+        padding-right: 1rem;
+    }
+
+    .expert-summary__tags {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0.5rem;
+    }
+
+    .expert-summary__controls {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+
+        .button {
+            min-height: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+            border-width: 0.2rem;
+
+            font-family: $f-montserrat;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 2.4rem;
+        }
+    }
+
+.shared-emails {
+    margin-top: 2.5rem;
+}
+
+    .shared-emails__title {
+        margin-bottom: 1.5rem;
+    }
+
+    .shared-email__header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1.5rem;
+        border-bottom: solid 0.1rem $c-grey;
+    }
+
+    .shared-email {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+        border-bottom: solid 0.1rem $c-grey;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    }

@@ -1,0 +1,58 @@
+#Ignore Everything ...
+*
+!*/
+
+#Except GitIgnore in root only ...
+!/.gitignore
+
+vendor/
+node_modules/
+.history/
+
+#Except Cygnus Readme
+!CYGNUS_RELEASE.txt
+
+#Except Maintenance Holding Page
+!holding.html
+!maintenance.lock
+!maintenance.unlock
+
+#Except Laravel Project
+!app/**/*
+!config/**/*
+!database/**/*
+!resources/**/*
+!routes/**/*
+!lang/**/*
+!bootstrap/**/*
+
+#Except Public and storage
+!public/.htaccess
+!public/.favicon.ico
+!public/index.php
+!public/robots.txt
+!public/serviceworker.js
+!storage/app/public/**/*
+
+#Except Composer,webpack ect
+!composer.json
+!package.json
+!webpack.*
+!.env.example
+!.env.testing
+!artisan
+!README.md
+!server.php
+!bitbucket-pipelines.yml
+!vite.config.js
+!phpunit.xml
+
+#Except Tests
+!tests/**/*
+
+#local hdev
+.DS_Store
+/docker-local
+.idea/
+certs/
+

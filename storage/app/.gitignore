@@ -1,0 +1,7 @@
+*
+*/
+!.gitignore
+!**/*
+public/upload/**/*
+public/installer-projects/**/*
+public/shed-solutions/**/*

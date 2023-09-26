@@ -1,0 +1,39 @@
+.video-upload {
+    display: flex;
+    flex-flow: column;
+
+    .input-label {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.video-upload__preview {
+    display: flex;
+    flex-flow: column;
+    margin-top: 2rem;
+}
+
+.video-upload__thumbnail {
+    width: 28rem;
+    height: 16rem;
+    background: $c-grey;
+    object-fit: cover;
+}
+
+.video-upload__custom {
+    margin-top: 2rem;
+}
+
+.video-upload__custom .file-upload__input {
+    width: 28rem;
+    height: 16rem;
+    margin-top: 0.5rem;
+}
+
+.video-upload__toggle {
+    margin-top: 1rem;
+    font-family: $f-montserrat;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $c-blue-admin;
+}

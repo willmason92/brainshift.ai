@@ -1,0 +1,89 @@
+.form-page {
+    display: flex;
+    flex-flow: column;
+}
+
+.form-subtitle {
+    font-family: $f-montserrat;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.form-title {
+    font-family: $f-manier;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+.form-title--mb {
+    margin-bottom: 4rem;
+}
+
+.form-section-title {
+    font-family: $f-montserrat;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-description {
+    font-family: $f-montserrat;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.form-row--end {
+    align-items: flex-end;
+}
+
+.form-group--no-shrink {
+    flex-shrink: 0;
+}
+
+.form-row--split-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.form-row--split-2-3 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
+}
+
+.form-row--max {
+    max-width: 33.5rem;
+}
+
+.form-label {
+    display: block;
+    width: 100%;
+}
+
+    .form-label__text {
+        display: block;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+
+.form-divider {
+    margin: 3rem 0 2rem;
+    border-color: $c-sand;
+    color: $c-sand;
+    background-color: $c-sand;
+}

@@ -1,0 +1,21 @@
+.admin-project__project-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0 4rem;
+    max-width: 82rem;
+
+    @media (min-width: 992px){
+        grid-template-columns: 1fr 1fr;
+        gap: 0 8rem;
+    }
+
+    @media (min-width: 1200px){
+        gap: 0 12rem;
+    }
+}
+
+    .project-details__products {
+        display: flex;
+        flex-flow: column;
+        gap: 1.5rem;
+    }

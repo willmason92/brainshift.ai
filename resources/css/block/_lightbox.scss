@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    Lightbox
+\*------------------------------------*/
+
+.vel-modal {
+    &.vel-modal {
+        background: rgba($c-green, 0.5);
+    }
+
+    .vel-btns-wrapper {
+        .btn__next,
+        .btn__prev {
+            display: flex;
+            top: auto;
+            bottom: 0.8rem;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            background: $c-lightest;
+            border-radius: 0.4rem;
+            opacity: 1;
+            transform: none;
+
+            .vel-icon {
+                width: 2rem;
+                fill: $c-red;
+            }
+
+            &.disable {
+                opacity: 1;
+                background: $c-disabled;
+            }
+        }
+    
+        .btn__prev {
+            left: 2rem;
+        }
+    
+        .btn__next {
+            right: 2rem;
+        }
+    }
+
+    .vel-btns-wrapper {
+        .btn__close {
+            display: flex;
+            top: 3.5rem;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            background: $c-lightest;
+            border-radius: 0.4rem;
+            opacity: 1;
+
+            .vel-icon {
+                fill: $c-red;
+            }
+        }
+    }
+}

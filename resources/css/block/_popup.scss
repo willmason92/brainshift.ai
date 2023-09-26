@@ -1,0 +1,104 @@
+/*------------------------------------*\
+    Popup
+\*------------------------------------*/
+
+.popup-prevent-scroll {
+    overflow: hidden;
+
+    .main-container {
+        overflow: hidden;
+        max-height: 100vh;
+    }
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: z('overlay');
+    transition: all 0.4s;
+    transform: translateY(100%);
+    
+    &.is-active {
+        transform: translateY(0%);
+    }
+}
+
+    .popup__inner {
+        position: relative;
+        margin: 0 auto;
+        padding: 2.5rem 2rem 10rem;
+        height: 100%;
+        max-width: 76.8rem;
+        overflow: auto;
+        background: $c-lightest;
+        border-radius: 2rem 2rem 0 0;
+        overscroll-behavior: contain;
+    }
+
+    .popup__controls {
+        margin-bottom: 2.5rem;
+    }
+
+    .popup__back {
+        position: relative;
+        display: inline-block;
+        padding-left: 2.5rem;
+        color: $c-text;
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-decoration: none;
+
+        &::before {
+            @include pseudo();
+            top: 50%;
+            left: 0;
+            margin-top: -0.5rem;
+            width: 1rem;
+            height: 1rem;
+            border-top: 0.2rem solid $c-red;
+            border-left: 0.2rem solid $c-red;
+            transform: rotate(-45deg);
+        }
+    }
+
+    .popup__back--margin {
+        margin-bottom: 2rem;
+    }
+
+    .popup__close {
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        width: 2rem;
+        height: 2rem;
+        overflow: hidden;
+        text-indent: -999rem;
+
+        &::before,
+        &::after {
+            @include pseudo();
+            top: 50%;
+            left: 50%;
+            margin-top: -0.1rem;
+            margin-left: -0.9rem;
+            width: 1.8rem;
+            height: 0.2rem;
+            background: $c-red;
+        }
+
+        &::before {
+            transform: rotate(-45deg);
+        }
+
+        &::after {
+            transform: rotate(45deg);
+        }
+    }
+
+    .popup__close--top {
+        top: 0;
+        right: 0;
+    }

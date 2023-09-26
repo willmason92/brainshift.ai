@@ -1,0 +1,45 @@
+.date-picker {
+    position: relative;
+    
+    .date-picker__input {
+        width: 100%;
+        height: 5rem;
+        padding: 1.5rem 4rem;
+        padding-left: 1.5rem;
+        border: solid 0.1rem $c-light-border;
+        border-radius: 0.2rem;
+        font-family: $f-montserrat;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2.2rem;
+    }
+    .dp__icon {
+        width: 2rem;
+        height: 2rem;
+
+        &.dp__input_icon {
+            left: auto;
+            right: 0;
+            color: $c-red;
+        }
+
+        &.dp__clear_icon {
+            display: none;
+        }
+    }
+}
+
+.date-picker__menu.dp__theme_light {
+    --dp-primary-color: #{$c-red};
+
+    .dp__month_year_row,
+    .dp__calendar,
+    .dp__action_row,
+    .dp__selection_preview {
+        font-size: 1.4rem;
+    }
+    
+    .dp__action_buttons {
+        --dp-success-color: #{$c-red};
+    }
+}

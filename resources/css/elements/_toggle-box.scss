@@ -1,0 +1,58 @@
+.toggle-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    &--start {
+        justify-content: flex-start;
+    }
+}
+
+    .toggle-box-option {
+        display: flex;
+        align-items: center;
+        padding: 1rem 3rem;
+        background: $c-lightest;
+        border-top: 0.1rem solid $c-green;
+        border-bottom: 0.1rem solid $c-green;
+        transition: background 0.2s ease;
+        border-right: 0.1rem solid $c-green;
+
+        &:first-child {
+            border-left: 0.1rem solid $c-green;
+            border-radius: 0.2rem 0 0 0.2rem;
+        }
+
+        &:last-child {
+            border-radius: 0 0.2rem 0.2rem 0;
+        }
+
+        &.active {
+            background: $c-green;
+            color: $c-lightest;
+        }
+    
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            user-select: none;
+            display: none;
+        }
+    }
+
+    .select-option__label {
+        color: $c-text;
+        font-family: $f-montserrat;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+    }
+
+.toggle-box--full {
+    width: 100%;
+
+    .toggle-box-option {
+        flex-grow: 1;
+    }
+}

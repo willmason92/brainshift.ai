@@ -1,0 +1,88 @@
+.project-detail__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.project-detail__tabs {
+    margin-bottom: 2rem;
+}
+
+.project-detail__share {
+    margin: 0;
+    min-width: 12rem;
+    padding: 0.75rem 1rem;
+}
+
+.project-detail__tabs {
+    display: flex;
+    gap: 0 3rem;
+}
+
+    .project-detail-tab {
+        opacity: 0.5;
+        color: $c-red;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+.project-detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0rem 1rem;
+
+    tr {
+        border-bottom: solid 0.1rem $c-grey;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+    .project-detail-key {
+        width: 30%;
+        vertical-align: top;
+        padding: 1rem 0;
+    }
+
+    .project-detail-value {
+        width: 70%;
+        text-align: right;
+        padding: 1rem 0;
+        padding-left: 2rem;
+    }
+
+.project-detail__image {
+    margin-bottom: 2rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+
+.project-detail__floor-plan {
+    background: $c-light-border;
+    font-weight: 500;
+}
+
+    .floor-plan-body {
+        color: $c-text-dark;
+    }
+
+.project-detail__shared .shared-experts {
+    margin-top: 2.5rem;
+}
+
+.project-detail__suggestions {
+    padding: 2rem 0;
+}
+
+.project-detail__controls {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}

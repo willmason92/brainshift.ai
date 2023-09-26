@@ -1,0 +1,48 @@
+.request-detail__status .request-status__update.button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.request-status__title {
+    margin-bottom: 2.5rem;
+}
+
+.request-status .select-option {
+    min-height: auto;
+}
+
+    .request-status__dot {
+        margin-right: 2rem;
+        width: 1rem;
+        height: 1rem;
+        background: $c-green;
+        border: solid 0.1rem $c-green;
+        border-radius: 50%;
+    }
+
+.request-status__dot.dot--1 {
+    background: $c-red;
+    border-color: $c-red;
+}
+
+.request-status__dot.dot--2 {
+    background: none;
+    border-color: $c-red;
+}
+
+.request-status__dot.dot--3 {
+    background: $c-secondary-grey;
+    border-color: $c-secondary-grey;
+}
+
+.request-status__dot.dot--4 {
+    background: $c-secondary-grey;
+    border-color: $c-secondary-grey;
+}
+
+.request-status__dot.dot--5 {
+    background: $c-red;
+    border-color: $c-red;
+}

@@ -1,0 +1,26 @@
+.share-project-popup .popup__inner {
+    padding-bottom: 5rem;
+}
+
+.share-project__title {
+    margin-bottom: 4rem;
+}
+
+.share-project__subtitle {
+    margin-bottom: 1.5rem;
+}
+
+.share-project__cta {
+    align-items: flex-start;
+    margin-bottom: 3.8rem;
+
+    .button {
+        margin-bottom: 0;
+    }
+}
+
+.share-project__send {
+    .button {
+        margin-top: 0;
+    }
+}

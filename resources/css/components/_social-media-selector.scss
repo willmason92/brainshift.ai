@@ -1,0 +1,28 @@
+.social-media-selector {
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+}
+
+    .social-media-option {
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-radius: 0.8rem;
+    
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            user-select: none;
+            display: none;
+        }
+
+        &.active svg path[fill="#DADADA"] {
+            fill: var(--color-brand);
+        }
+
+        &.disabled {
+            opacity: 0.5;
+        }
+    }

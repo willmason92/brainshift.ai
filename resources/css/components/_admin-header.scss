@@ -1,0 +1,131 @@
+/*------------------------------------*\
+    Admin Header
+\*------------------------------------*/
+
+.admin-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem 3rem;
+    background: $c-red;
+    color: $c-lightest;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    z-index: z('header');
+}
+
+.admin-nav {
+    position: fixed;
+    top: 6.2rem;
+    left: 0;
+    bottom: 0;
+    width: 23.6rem;
+    padding: 0.7rem;
+    background: $c-lightest;
+}
+
+    .admin-nav__item {
+        margin-bottom: 0.7rem;
+    }
+
+    .admin-nav__link {
+        position: relative;
+        display: block;
+        padding: 0.6rem 5rem 0.6rem 1.3rem;
+        color: $c-darkest;
+        border-radius: 0.3rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.4s;
+
+        &::before {
+            @include pseudo();
+            top: 50%;
+            right: 1rem;
+            margin-top: -0.6rem;
+            width: 1rem;
+            height: 1rem;
+            border-top: 0.2rem solid $c-darkest;
+            border-right: 0.2rem solid $c-darkest;
+            transition: all 0.4s;
+            transform: rotate(45deg);
+        }
+
+        &:hover {
+            background: $c-blue;
+
+            &::before {
+                border-color: $c-blue-dark;
+            }
+        }
+    }
+
+    .admin-header__profile {
+        position: relative;
+        display: flex;
+        margin-block: -1.5rem;
+
+        &:hover {
+            .admin-header__profile-button {
+                color: $c-red;
+                background: $c-lightest;
+            }
+
+            .admin-header__profile-menu {
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+    }
+
+    .admin-header__profile-button {
+        position: relative;
+        padding: 1.5rem 4rem 1.5rem 2rem;
+        font-size: 1rem;
+        font-weight: 700;
+        transition: all 0.4s;
+
+        &::before {
+            @include pseudo();
+            top: 50%;
+            right: 2rem;
+            margin-top: -0.6rem;
+            width: 1rem;
+            height: 1rem;
+            border-bottom: 0.2rem solid currentColor;
+            border-right: 0.2rem solid currentColor;
+            transform: rotate(45deg);
+        }
+    }
+
+    .admin-header__profile-menu {
+        position: absolute;
+        top: 100%;
+        right: -0.2rem;
+        width: max(calc(100% + 3rem), 15rem);
+        background: $c-lightest;
+        border: 0.2rem solid $c-red;
+        border-top: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.4s;
+    }
+
+    .admin-header__profile-link {
+        display: block;
+        padding: 0.5rem 2rem;
+        text-decoration: none;
+        text-transform: none;
+        transition: all 0.4s;
+
+        &:hover {
+            background: $c-blue;
+            color: $c-darkest;
+        }
+    }

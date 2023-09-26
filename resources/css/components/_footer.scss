@@ -1,0 +1,99 @@
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+
+.footer {
+    position: relative;
+    padding: 1rem 0 7rem;
+    background: $c-lightest;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+    .footer__copyright {
+        margin-top: 4rem;
+        flex-basis: 100%;
+
+        a {
+            color: $c-text;
+        }
+    }
+
+    .footer__to-top {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 3rem;
+        height: 3rem;
+        overflow: hidden;
+        text-indent: -999rem;
+
+        &::before {
+            @include pseudo();
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            margin-top: -0.9rem;
+            margin-left: -0.4rem;
+            border-left: 0.4rem solid transparent;
+            border-right: 0.4rem solid transparent;
+            border-bottom: 0.4rem solid $c-text;
+        }
+
+        &::after {
+            @include pseudo();
+            top: 50%;
+            left: 50%;
+            margin-top: -0.5rem;
+            margin-left: -0.1rem;
+            width: 0.2rem;
+            height: 1.4rem;
+            background: $c-text;
+        }
+    }
+
+    .footer__logo-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 2rem 2rem 2rem 6rem;
+        width: 27rem;
+        overflow: hidden;
+
+        &::before {
+            @include pseudo();
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 0.6rem 0.5rem 0.8rem rgba($c-black, 0.2);
+            transform: skewX(-30deg);
+            transform-origin: bottom left;
+        }
+    }
+
+    .footer__logo {
+        display: block;
+    }
+
+    .footer__grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__grid-info {
+        flex-basis: 50%;
+        margin-bottom: 3rem;
+    }
+
+    .footer__grid-buttons {
+        flex-basis: 50%;
+
+        .footer-button--phone {
+            margin: 0;
+        }
+    }
+     

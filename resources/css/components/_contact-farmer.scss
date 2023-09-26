@@ -1,0 +1,13 @@
+.permissions-wrapper {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.permissions-wrapper__text {
+    font-family: $f-montserrat;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+}

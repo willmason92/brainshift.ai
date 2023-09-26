@@ -1,0 +1,43 @@
+.toast {
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 995;
+    width: calc(100% - 4rem);
+    max-width: 72.8rem;
+    background: #e8e8e8;
+    color: $c-black;
+    padding: 1.5rem;
+    box-shadow: 0 0 0.8rem rgba(204, 197, 184, 0.25);
+    border-radius: 0.4rem;
+    transition: opacity 1.5s ease;
+
+    &.animate {
+        opacity: 0;
+    }
+}
+
+.toast--success {
+    background: $c-light-green;
+    color: $c-green;
+}
+
+.toast--error {
+    background: $c-error-bg;
+    color: $c-error-red;
+}
+
+    .toast__message {
+        font-family: $f-montserrat;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .toast__dismiss {
+        color: $c-error-red;
+        cursor: pointer;
+    }
+

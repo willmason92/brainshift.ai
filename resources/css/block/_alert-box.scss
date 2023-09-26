@@ -1,0 +1,123 @@
+/*------------------------------------*\
+    Popup
+\*------------------------------------*/
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $c-green;
+    opacity: 0.5;
+    z-index: 9995;
+    overflow-y: hidden;
+}
+
+.alert-box {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9996;
+    overscroll-behavior: contain;
+    
+    overflow-y: auto;
+    border-radius: 0.8rem;
+}
+
+.login-alert-trigger {
+    color: $c-red;
+    text-decoration: underline;
+}
+
+.login-alert {
+    .login-alert-button {
+        margin: 0;
+        min-width: 0;
+
+        &:first-of-type {
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+    }
+
+    .alert-box__inner {
+        max-width: 38rem;
+    }
+}
+
+    .login-alert__icon {
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 0.75rem;
+    }
+
+.alert-box__inner {
+    position: relative;
+    z-index: 9997;
+    margin: 0 auto;
+    padding: 2.5rem 2rem 2rem;
+    width: calc(100% - 4rem);
+    max-width: 76.8rem;
+    max-height: 95vh;
+    background: $c-lightest;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    max-width: 40rem;
+}
+
+    .login-alert__controls {
+        margin-bottom: 1rem;
+    }
+
+    .alert-box__title {
+        font-family: $f-montserrat;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 2.4rem;
+    }
+
+    .alert-box__close {
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        width: 2rem;
+        height: 2rem;
+        overflow: hidden;
+        text-indent: -999rem;
+
+        &::before,
+        &::after {
+            @include pseudo();
+            top: 50%;
+            left: 50%;
+            margin-top: -0.1rem;
+            margin-left: -0.9rem;
+            width: 1.8rem;
+            height: 0.2rem;
+            background: $c-red;
+        }
+
+        &::before {
+            transform: rotate(-45deg);
+        }
+
+        &::after {
+            transform: rotate(45deg);
+        }
+    }
+
+    .alert-box__cta {
+        margin-top: 4rem;
+        margin-bottom: 0;
+        min-width: 0;
+
+        &:nth-of-type(2){
+            margin-top: 2rem;
+        }
+    }

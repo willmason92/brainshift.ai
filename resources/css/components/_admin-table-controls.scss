@@ -1,0 +1,123 @@
+
+.admin-table__controls {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 3rem;
+    background: $c-lightest;
+    border-radius: 0.8rem 0.8rem 0 0;
+    z-index: 3;
+    min-width: 75rem;
+}
+
+    .table-controls__filters {
+        display: flex;
+        gap: 1rem;
+    }
+
+        .table-filter-wrapper {
+            position: relative;
+        }
+
+            .table-filter {
+                padding: 0.5rem 1rem;
+                background: $c-table-filter-clear;
+                border-radius: 0.3rem;
+                cursor: pointer;
+            
+                &--clear {
+                    background: $c-light-border;
+                }
+
+                &.yellow {
+                    background: $c-cell-yellow;
+                    color: $c-text-dark;
+                }
+                &.green {
+                    background: $c-cell-green;
+                    color: $c-lightest;
+                }
+                &.light-green {
+                    background: $c-cell-light-green;
+                    color: $c-lightest;
+                }
+                &.faint-green {
+                    background: $c-cell-faint-green;
+                    color: $c-text-dark;
+                }
+                &.red {
+                    background: $c-cell-red;
+                    color: $c-lightest;
+                }
+                &.grey {
+                    background: $c-cell-grey;
+                    color: $c-text-dark;
+                }
+                &.blue {
+                    background: $c-blue-admin;
+                    color: $c-lightest;
+                }
+            }
+
+                .table-filter__dropdown {
+                    display: none;
+                    flex-flow: column;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    z-index: 95;
+                    width: max-content;
+                    padding: 0.5rem 0;
+                    background: $c-lightest;
+                    box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.12), 0 0.1rem 0.2rem rgba(0,0,0,0.24);
+                    border-radius: 0.4rem;
+
+                    &.active {
+                        display: flex;
+                    }
+                }
+
+                    .table-filter-item {
+                        padding: 0.5rem 1rem;
+                    }
+
+    .table-controls__title {
+        font-family: $f-montserrat;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    .table-controls__search {
+        .search-bar {
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            border: solid 0.1rem $c-light-border;
+            border-radius: 0.3rem;
+        }
+
+            .search-bar__icon {
+                margin: 0 0.75rem;
+            }
+
+            .search-bar__search {
+                height: 100%;
+                border: none;
+                background: none;
+            }
+    }
+
+    .table-controls__display {
+        color: $c-light-border;
+    }
+
+        .table-control-per-page {
+            height: 2.6rem;
+            margin: 0 0.5rem;
+            border: solid 0.1rem $c-light-border;
+            border-radius: 0.3rem;
+        }
+
+ 

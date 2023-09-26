@@ -1,0 +1,139 @@
+/*------------------------------------*\
+    Button
+\*------------------------------------*/
+
+.button {
+    position: relative;
+    display: block;
+    color: $c-red;
+    background: $c-lightest;
+    margin: 2rem 0;
+    padding: 1.8rem;
+    border: 0.1rem solid $c-red;
+    border-radius: 10rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.button.disabled {
+    background: $c-disabled;
+    color: $c-lightest;
+    box-shadow: 0px 0px 25px 0px $c-disabled;
+    border-color: $c-disabled;
+    pointer-events: none;
+}
+
+.button.loading {
+    &::after {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50px;
+        border: 0.5rem solid gray;
+        border-top-color: #444;
+        animation: anim-loading-button 0.75s linear infinite;
+      }
+}
+
+@keyframes anim-loading-button {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+
+
+.button--fill {
+    background: $c-red;
+    color: $c-lightest;
+}
+
+.button--clear {
+    border: 0;
+}
+
+.button--thin {
+    display: inline-block;
+    min-width: 30rem;
+    padding: 1rem;
+}
+
+.button--slim {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+}
+
+.button--small {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
+}
+
+.button--full, .button--span {
+    width: 100%;
+}
+
+.button--no-bg {
+    background: none;
+}
+
+.button--no-margin {
+    margin: 0;
+}
+
+.button--continue {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    width: calc(100% - 4rem);
+    max-width: 72.8rem;
+    z-index: 10;
+    transform: translateX(-50%);
+
+    &.admin {
+        position: absolute;
+    }
+}
+
+.button--admin {
+    padding: 1rem 1.5rem;
+    background: $c-blue-admin;
+    color: $c-lightest;
+    border-color: $c-blue-admin;
+    border-radius: 0.3rem;
+}
+
+.title-with-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    >* {
+        margin-bottom: 0;
+    }
+
+    .button {
+        margin: 0;
+        padding: 0.5rem 3.2rem;
+    }
+}
+
+.title-with-button--extra-margin {
+    margin-bottom: 3rem;
+}

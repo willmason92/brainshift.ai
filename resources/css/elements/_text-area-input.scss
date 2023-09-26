@@ -1,0 +1,36 @@
+.text-area-input  {
+    width: 100%;
+    min-height: 13.8rem;
+    padding: 1.7rem;
+    resize: none;
+
+    border: 0.1rem solid $c-light-border;
+    border-radius: 0.2rem;
+    
+    font-family: $f-montserrat;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+
+    &::placeholder {
+        color: $c-secondary-grey;
+    }
+}
+
+.wysiwyg-editor {
+    margin-bottom: 4.2rem;
+    height: var(--editor-height, 13.8rem);
+
+    .ql-editor {
+        height: var(--editor-height, 13.7rem);
+    }
+}
+
+.wysiwyg-editor--resize {
+    margin-bottom:0;
+    height: auto;
+
+    .ql-editor {
+        resize: vertical;  
+    }
+}

@@ -1,0 +1,40 @@
+.collapsed-box.card {
+    display: flex;
+    flex-flow: column;
+    padding: 1.5rem;
+}
+
+.collapsed-box__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .collapsed-box-title {
+        margin: 0;
+        font-family: $f-montserrat;
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 2.6rem;
+        color: $c-green;
+    }
+
+.collapsed-box-arrow {
+    transform: rotate(180deg);
+    transition: transform 0s ease;
+}
+
+.collapsed-box.active .collapsed-box-arrow {
+    transform: rotate(0);
+}
+
+.collapsed-box__content {
+    overflow: hidden;
+    transition: height 0s ease;
+
+    box-sizing: border-box
+}
+
+.collapsed-box__content-wrapper {
+    padding-top: 0.5rem;
+}

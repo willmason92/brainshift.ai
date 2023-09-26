@@ -1,0 +1,128 @@
+.shed-solutions-initial-title {
+    margin-bottom: 5rem;
+}
+
+.shed-solutions {
+    position: relative;
+    display: flex;
+}
+
+    .shed-solutions__path {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2.2rem;
+        height: 100%;
+    }
+
+        .shed-solutions-path {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+.shed-solutions__sections {
+    width: 100%;
+}
+
+    .shed-solution {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        align-items: stretch;
+    }
+
+        .shed-solution__stage {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+            .shed-solution__line {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 100%;
+                border: 0.1rem solid $c-light-border;
+
+                &.start {
+                    top: 50%;
+                    height: 50%;
+                }
+            }
+
+            .shed-solution:last-child .shed-solution__line {
+                height: 50%;
+            }
+
+            .shed-solution__dot {
+                margin-bottom: 1rem;
+                width: 2.2rem;
+                height: 2.2rem;
+                min-width: 2.2rem;
+                border: solid 0.1rem $c-light-border;
+                background: #f8f4f4;
+                border-radius: 50%;
+                z-index: 3;
+
+                &.active {
+                    background-color: $c-green;
+                }
+            }
+
+        .shed-solution__section.card {
+            flex-grow: 1;
+            padding: 1.5rem;
+        }
+
+.shed-solution-mb-1 {
+    margin-bottom: 1rem;
+}
+
+.shed-solutions-mb-small {
+    margin-bottom: 3.5rem;
+}
+
+.shed-solutions-mb-large {
+    margin-bottom: 5.5rem;
+}
+
+.shed-solution-section {
+    display: flex;
+    flex-flow: column;
+}
+
+.shed-solutions-final {
+    display: flex;
+    flex-flow: column;
+       
+    .shed-solutions-final__submit {
+        margin-bottom: 0;
+    }
+}
+    .shed-solutions-final__title {
+        margin-bottom: 2rem;
+    }
+
+    .shed-solutions-final__card.card {
+        display: flex;
+        flex-flow: column;
+        padding: 10rem 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+        .shed-solutions-final__icon {
+            margin-bottom: 5rem;
+        }
+
+        .shed-solutions-final__descr {
+            font-family: $f-montserrat;
+            font-size: 2.2rem;
+            font-weight: 600;
+            line-height: 2.8rem;
+        }
+ 

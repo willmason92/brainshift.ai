@@ -1,0 +1,90 @@
+.installer-profile__summary {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+    .installer-profile__visits {
+        flex-grow: 1;
+        font-family: $f-montserrat;
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding: 2rem 3rem;
+        margin-bottom: 0;
+
+        .admin-subtitle {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (min-width: 1024px){
+            // width: 30%;
+            flex-grow: 3;
+        }
+    }
+
+    .installer-profile__requests-overview {
+        flex-grow: 1;
+        display: flex;
+        gap: 4rem;
+        width: 100%;
+        margin-bottom: 0;
+
+        @media (min-width: 1024px){
+            width: 70%;
+            flex-grow: 7;
+        }
+    }
+
+        .installer-profile__featured-stats {
+            display: flex;
+            flex-flow: column;
+            gap: 2.5rem;
+            width: 35%;
+            min-width: 20rem;
+            border-right: solid 0.1rem $c-grey;
+            flex-grow: 1;
+        }
+
+        .installer-profile__other-stats {
+            width: 66%;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2.5rem;
+        }
+
+.request-stat {
+    display: flex;
+    align-items: center;
+    margin: 0 1.5rem;
+
+    &.dark {
+        .request-stat__value {
+            background: $c-text-dark;
+            color: $c-lightest;
+        }
+        .request-stat__label {
+            font-family: $f-montserrat;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+    }
+}
+
+    .request-stat__value {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+        background: $c-grey;
+        min-width: 2.8rem;
+        min-height: 2rem;
+        border-radius: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+.installer-profile__requests {
+    margin-bottom: 3rem;
+}

@@ -1,0 +1,33 @@
+.cta {
+    width: 100vw;
+    margin: 2rem 0;
+    margin-left: -2rem;
+    background: $c-light-border;
+    padding: 2rem;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.cta--padded {
+    width: 100%;
+    border-radius: 0.8rem;
+    margin-left: 0;
+}
+
+.cta__title {
+    font-family: $f-montserrat;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+
+.cta__link {
+    display: inline-block;
+    background: none;
+    border-width: 0.2rem;
+    min-width: 30rem;
+    padding: 1rem;
+    margin-bottom: 0;
+}

@@ -1,0 +1,11 @@
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: darken($c-grey, 10%);
+    //1rem 10px
+    
+    &.smooth-scroll {
+        scroll-behavior: smooth;
+    }
+}

@@ -1,0 +1,50 @@
+.tag {
+    padding: 0.5rem 0.8rem;
+    background: #F7F6F4;
+    color: $c-green;
+    font-family: $f-montserrat;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.tag--green {
+    background: $c-light-green;
+    color: $c-green;
+}
+
+.tag--red {
+    background: $c-red-light;
+    color: $c-lightest;
+}
+
+.tag--large {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+.tag--rounded {
+    border-radius: 0.4rem;
+}
+
+.tag--contacted {
+    background: $c-red-light;
+    color: $c-lightest;
+}
+
+.tag--converted {
+    background: $c-sand;
+    color: $c-red;
+}
+
+.tag--finished {
+    background-color: $c-sand;
+    color: $c-secondary-grey;
+}

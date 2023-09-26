@@ -1,0 +1,133 @@
+.file-upload-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+.file-upload__images {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.file-upload__image {
+    position: relative;
+    width: 12.5rem;
+    height: 12.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    background: $c-sand;
+
+    .file-upload__image-img {
+        width: 12.5rem;
+        height: 12.5rem;
+        object-fit: contain;
+    }
+
+    .doc-icon {
+        width: 6rem;
+        height: auto;
+    }
+
+    .file-upload__image-del {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: $c-red;
+        width: 3.5rem;
+        height: 3.5rem;
+        transition: opacity 0.2s ease;
+    }
+}
+
+.file-upload__doc {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+    .file-upload__filename {
+        font-size: 1.1rem;
+    }
+
+.file-upload__input {
+    width: 12.5rem;
+    height: 12.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: dotted 0.2rem $c-red;
+    border-radius: 0.8rem;
+
+    input {
+        display: none;
+    }
+}
+
+    .file-upload__inner {
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $c-red;
+        border-radius: 0.4rem;
+    }
+
+    .file-upload__progress {
+        width: 12.5rem;
+    }
+    
+.file-upload-wrapper.rounded {
+    .file-upload__input {
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+    }
+
+        .file-upload__inner {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+
+            svg {
+                width: 3.3rem;
+                height: 3.3rem;
+            }
+        }
+
+    .file-upload__image {
+        border-radius: 0;
+        overflow: visible;
+
+        .file-upload__image-img {
+            border-radius: 50%;
+        }
+    }
+}
+
+.file-upload-wrapper.small {
+    .file-upload__input {
+        width: 6rem;
+        height: 6rem;
+    }
+
+        .file-upload__inner {
+            width: 2.3rem;
+            height: 2.3rem;
+
+            svg {
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+}

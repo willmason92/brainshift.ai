@@ -1,0 +1,40 @@
+/*------------------------------------*\
+   Body
+\*------------------------------------*/
+
+html {
+    overflow-y: auto;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    color: $c-text;
+    overflow: hidden;
+	font-family: $f-montserrat;
+	font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    padding-top: 7rem;
+    background: $c-lightest;
+    margin: 0 auto;
+    max-width: 76.8rem;
+    min-height: 100vh;
+}
+
+.main {
+    background: $c-sand;
+    flex-grow: 1;
+}
+
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 6.2rem;
+    padding-left: 23.6rem;
+}

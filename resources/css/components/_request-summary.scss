@@ -1,0 +1,26 @@
+.request-summary {
+    margin: 2rem 0;
+}
+
+    .request-summary__message {
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+        border-bottom: 0.1rem solid $c-grey;
+    }
+
+    .request-summary__table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0rem 1rem;
+    }
+
+    .request-summary-key {
+        width: 35%;
+        vertical-align: top;
+    }
+
+    .request-summary-value {
+        width: 65%;
+        text-align: right;
+        padding-left: 2rem;
+    }

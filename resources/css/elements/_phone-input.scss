@@ -1,0 +1,12 @@
+.phone-input {
+    width: 100%;
+    height: 5rem;
+    padding: 1.5rem 1.5rem;
+    border: solid 0.1rem $c-light-border;
+    border-radius: 0.2rem;
+    transition: all 0.4s;
+    
+    &[disabled] {
+        opacity: 0.5;
+    }
+}

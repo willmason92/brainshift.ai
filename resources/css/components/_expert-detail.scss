@@ -1,0 +1,100 @@
+.expert-detail {
+    display: flex;
+    flex-flow: column;
+}
+
+    .expert-detail__about {
+        margin-top: 2rem;
+    }
+
+.expert-navigation .expert-navigation-control {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+ 
+    border: none;
+    color: $c-green;
+    font-weight: 500;
+}
+
+.expert-navigation-arrow {
+    margin-right: 2rem;
+
+    &::before {
+        @include pseudo();
+        border: solid $c-red;
+        border-width: 0 0.3rem 0.3rem 0;
+        display: inline-block;
+        padding: 0.6rem;
+        transform: translateY(-50%) rotate(135deg);
+    }
+}
+
+.expert-row {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.expert-column {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 2rem;
+}
+
+.expert-title {
+    margin-bottom: 1rem;
+}
+
+.summary-subtitle {
+    margin-bottom: 1rem;
+}
+
+.expert-detail__title {
+    display: flex;
+    margin-top: 2rem;
+}
+
+    .expert-detail__image {
+        width: 6.5rem;
+        margin-right: 1.5rem;
+        min-width: 6.5rem;
+        flex-shrink: 0;
+        overflow: hidden;
+        
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .expert-name {
+        line-height: 2.6rem;
+        margin-bottom: 1rem;
+    }
+
+.expert-detail__summary {
+    display: flex;
+    flex-flow: column;
+}
+
+    .expert-detail__tags {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+
+        .expert-tag {
+            background: $c-sand;
+            font-weight: 500;
+        }
+
+    }
+
+    .expert-detail__location {
+        display: grid;
+        grid-template-columns: 3rem 1fr;
+    }

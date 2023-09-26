@@ -1,0 +1,11 @@
+/*------------------------------------*\
+    Nanopixel Shed
+\*------------------------------------*/
+
+@import 'node_modules/etex-shed-configurator-main/dist/style';
+
+.nanopixel-shed {
+    position: relative;
+    margin: -2rem;
+    z-index: 1;
+}

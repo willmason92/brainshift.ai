@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    Material
+\*------------------------------------*/
+
+.material {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+    .material__image {
+        margin-right: 1.5rem;
+        width: 7rem;
+        flex-basis: 7rem;
+        flex-shrink: 0;
+    }
+
+    .material__name {
+        flex-basis: calc(100% - 8.5rem);
+        padding-right: 5rem;
+        color: $c-text-dark;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .material__button {
+        margin: 1rem 0 0;
+        flex-basis: 100%;
+        min-width: 0;
+    }

@@ -1,0 +1,77 @@
+.find-an-expert {
+    display: flex;
+    flex-flow: column;
+}
+
+    .find-an-expert__subtitle {
+        margin-bottom: 1.5rem;
+    }
+
+    .find-an-expert__title {
+        margin-bottom: 1rem;
+    }
+
+.expert-type-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .expert-type-bar__title {
+        color: $c-red;
+        margin-bottom: 1.5rem;
+    }
+
+.find-an-expert__filters {
+    margin-top: 1rem;
+}
+
+.expert-contact__explanation {
+    font-size: 1.8rem; 
+    line-height: 2.4rem;
+}
+
+.expert-contact__title {
+    margin-bottom: 3.8rem;
+}
+
+.expert-contact__subtitle {
+    margin-bottom: 1rem;
+}
+
+.expert-contact__row,
+.expert-contact__tag {
+    display: flex;
+    justify-content: space-between;
+}
+
+.expert-contact__tag .tag {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+    .expert-contact__edit {
+        color: $c-red;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+.expert-contact__attached {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 2rem;
+    color: $c-red;
+}
+
+    .attached-project__icon {
+        margin-right: 1rem;
+    }
+
+    .attached-project__title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 1.8rem;
+        text-decoration: underline;
+    }
+

@@ -1,0 +1,58 @@
+/*------------------------------------*\
+    Fonts
+\*------------------------------------*/
+
+@font-face {
+    font-family: 'Manier';
+    src: url('../../fonts/Manier-Bold.woff2') format('woff2'),
+        url('../../fonts/Manier-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manier Heavy';
+    src: url('../../fonts/Manier-Heavy.woff2') format('woff2'),
+        url('../../fonts/Manier-Heavy.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
+         url('../../fonts/montserrat-v25-latin-regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+  /* montserrat-500 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/montserrat-v25-latin-500.woff2') format('woff2'),
+         url('../../fonts/montserrat-v25-latin-500.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+  }
+  /* montserrat-600 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/montserrat-v25-latin-600.woff2') format('woff2'),
+         url('../../fonts/montserrat-v25-latin-600.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/montserrat-v25-latin-700.woff2') format('woff2'),
+         url('../../fonts/montserrat-v25-latin-700.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }

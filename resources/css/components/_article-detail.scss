@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    Article Detail
+\*------------------------------------*/
+
+.article-detail {
+    margin: -2rem;
+    padding: 2rem;
+    background: $c-lightest;
+}
+
+    .article-detail__title {
+        margin-bottom: 2rem;
+    }
+
+    .article-detail__author {
+        margin: 0 0 2rem;
+        color: $c-text-dark;
+    }
+
+.article-detail__suggestions {
+    background: $c-sand;
+    margin: 0 -2rem 0 -2rem;
+    padding: 2rem;
+}
+
+.suggested-article-title {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
